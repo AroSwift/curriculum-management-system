@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'usersTableSeeder')
+@section('title', 'Users')
 
 @section('content')
 

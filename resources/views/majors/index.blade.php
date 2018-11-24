@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'majorsTableSeeder')
+@section('title', 'Majors')
 
 @section('content')
 
