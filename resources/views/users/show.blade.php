@@ -23,7 +23,12 @@
     <br/>
     <strong>Email:</strong> {{ $user->email  }}
     <br>
-    <strong>Active:</strong> {{ $user->active  }}
+    <strong>Active:</strong>
+    @if($user->active)
+        <i class="fa fa-check" aria-hidden="true"></i>
+    @else
+        <i class="fa fa-times" aria-hidden="true"></i>
+    @endif
     <br>
 
 @endsection

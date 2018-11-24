@@ -21,13 +21,18 @@
     <br>
     <strong>Credit Hour:</strong> {{ $course->credit_hour  }}
     <br>
-    <strong>Major:</strong> {{ $course->major  }}
+    <strong>Major:</strong> {{ $course->major_id  }}
     <br>
-    <strong>Active:</strong> {{ $course->active  }}
+    <strong>Active:</strong>
+    @if($course->active)
+        <i class="fa fa-check" aria-hidden="true"></i>
+    @else
+        <i class="fa fa-times" aria-hidden="true"></i>
+    @endif
     <br>
     <strong>Description:</strong> {{ $course->description  }}
     <br>
-    <strong>Course Coordinator:</strong> {{ $course->course_coordinator  }}
+    <strong>Course Coordinator:</strong> {{ $course->course_coordinator_id }}
     <br>
 
 @endsection

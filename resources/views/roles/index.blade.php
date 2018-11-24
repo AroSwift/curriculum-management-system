@@ -4,7 +4,10 @@
 
 @section('content')
 
-    <a href="roles/create" class="btn btn-primary mb-3 mt-3">Create new</a>
+    <a href="roles/create" class="btn btn-primary mb-3 mt-3">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        Create
+    </a>
 
 
     <table class="table">

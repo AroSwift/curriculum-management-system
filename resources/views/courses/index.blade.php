@@ -4,7 +4,10 @@
 
 @section('content')
 
-    <a href="courses/create" class="btn btn-primary mb-3 mt-3">Create new</a>
+    <a href="courses/create" class="btn btn-primary mb-3 mt-3">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        Create
+    </a>
 
 
     <table class="table">
@@ -25,12 +28,18 @@
                 <td>
                     <a href="/courses/{{ $course->id  }}">{{ $course->course_name }}</a>
                 </td>
-                <td>{{ $course->course_number  }}</td>
-                <td>{{ $course->credit_hour  }}</td>
-                <td>{{ $course->major  }}</td>
-                <td>{{ $course->active  }}</td>
-                <td>{{ $course->description  }}</td>
-                <td>{{ $course->course_coordinator  }}</td>
+                <td>{{ $course->course_number }}</td>
+                <td>{{ $course->credit_hour }}</td>
+                <td>{{ $course->major }}</td>
+                <td>
+                    @if($course->active)
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    @else
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    @endif
+                </td>
+                <td>{{ $course->description }}</td>
+                <td>{{ $course->course_coordinator }}</td>
             </tr>
         @endforeach
         </tbody>
