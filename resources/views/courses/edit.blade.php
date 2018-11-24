@@ -10,32 +10,32 @@
 
         <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" name="name" value="{{ $course->course_name }}">
+            <input type="text" class="form-control" name="course_name" value="{{ $course->course_name }}">
         </div>
 
         <div class="form-group">
             <label>Number</label>
-            <input type="text" class="form-control" name="name" value="{{ $course->course_number }}">
+            <input type="text" class="form-control" name="course_number" value="{{ $course->course_number }}">
         </div>
 
         <div class="form-group">
             <label>Credit Hour</label>
-            <input type="text" class="form-control" name="name" value="{{ $course->credit_hour }}">
+            <input type="text" class="form-control" name="credit_hour" value="{{ $course->credit_hour }}">
         </div>
 
         <div class="form-group">
             <label>Major</label>
-            <input type="text" class="form-control" name="name" value="{{ $course->major_id }}">
+            <input type="text" class="form-control" name="major_id" value="{{ $course->major_id }}">
         </div>
 
         <div class="form-group">
             <label>Description</label>
-            <input type="text" class="form-control" name="abbr" value="{{ $course->description }}">
+            <input type="text" class="form-control" name="description" value="{{ $course->description }}">
         </div>
 
         <div class="form-group">
             <label>Course Coordinator</label>
-            <input type="text" class="form-control" name="abbr" value="{{ $course->course_coordinator }}">
+            <input type="text" class="form-control" name="course_coordinator_id" value="{{ $course->course_coordinator }}">
         </div>
 
         <div class="form-group">

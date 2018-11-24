@@ -10,32 +10,32 @@
 
         <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" name="name" value="{{ old('course_name')  }}">
+            <input type="text" class="form-control" name="course_name" value="{{ old('course_name')  }}">
         </div>
 
         <div class="form-group">
             <label>Number</label>
-            <input type="text" class="form-control" name="name" value="{{ old('course_number')  }}">
+            <input type="text" class="form-control" name="course_number" value="{{ old('course_number')  }}">
         </div>
 
         <div class="form-group">
             <label>Credit Hour</label>
-            <input type="text" class="form-control" name="name" value="{{ old('credit_hour')  }}">
+            <input type="text" class="form-control" name="credit_hour" value="{{ old('credit_hour')  }}">
         </div>
 
         <div class="form-group">
             <label>Major</label>
-            <input type="text" class="form-control" name="name" value="{{ old('major_id')  }}">
+            <input type="text" class="form-control" name="major_id" value="{{ old('major_id')  }}">
         </div>
 
         <div class="form-group">
             <label>Description</label>
-            <input type="text" class="form-control" name="abbr" value="{{ old('description')  }}">
+            <input type="text" class="form-control" name="description" value="{{ old('description')  }}">
         </div>
 
         <div class="form-group">
             <label>Course Coordinator</label>
-            <input type="text" class="form-control" name="abbr" value="{{ old('course_coordinator')  }}">
+            <input type="text" class="form-control" name="course_coordinator_id" value="{{ old('course_coordinator')  }}">
         </div>
 
         <div class="form-group">

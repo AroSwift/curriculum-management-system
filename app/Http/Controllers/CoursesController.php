@@ -25,8 +25,8 @@ class CoursesController extends Controller {
             'credit_hour' => ['required', 'integer'],
             'major_id' => ['integer'],
             'active' => ['boolean'],
-            'description' => ['required', 'max:255'],
-            'course_coordinator_id' => ['integer']
+            'description' => ['max:255'],
+            'course_coordinator_id' => ['nullable', 'integer']
         ]);
 
         $attributes['active'] = empty($attributes['active']) ? false : true;
@@ -46,8 +46,8 @@ class CoursesController extends Controller {
             'credit_hour' => ['required', 'integer'],
             'major_id' => ['integer'],
             'active' => ['boolean'],
-            'description' => ['required', 'max:255'],
-            'course_coordinator_id' => ['integer']
+            'description' => ['max:255'],
+            'course_coordinator_id' => ['nullable', 'integer']
         ]);
 
         $attributes['active'] = empty($attributes['active']) ? false : true;
