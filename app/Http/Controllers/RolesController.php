@@ -20,11 +20,8 @@ class RolesController extends Controller {
 
     public function store(Role $role) {
         $attributes = request()->validate([
-            'first_name' => ['required', 'max:255'],
-            'last_name' => ['required', 'max:255'],
-            'title' => ['required', 'max:255'],
-            'email' => ['required', 'email'],
-            'active' => ['boolean']
+            'name' => ['required', 'max:255'],
+            'description' => ['required', 'max:255']
         ]);
 
         Role::create($attributes);
@@ -32,16 +29,13 @@ class RolesController extends Controller {
     }
 
     public function edit(Role $role) {
-        return view('roles.edit', compact('user'));
+        return view('roles.edit', compact('role'));
     }
 
     public function update(Role $role) {
         $attributes = request()->validate([
-            'first_name' => ['required', 'max:255'],
-            'last_name' => ['required', 'max:255'],
-            'title' => ['required', 'max:255'],
-            'email' => ['required', 'email'],
-            'active' => ['boolean']
+            'name' => ['required', 'max:255'],
+            'description' => ['required', 'max:255']
         ]);
 
         $role->update($attributes);

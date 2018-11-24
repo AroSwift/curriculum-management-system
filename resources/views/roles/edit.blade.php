@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <form action="/roles/{{ $role->id  }}" method="POST" class="form-group">
+    <form action="/roles/{{ $role->id  }}" method="POST" class="form-group mt-3">
         @method('PATCH')
         @csrf
 

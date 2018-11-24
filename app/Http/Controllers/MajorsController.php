@@ -20,11 +20,8 @@ class MajorsController extends Controller {
 
     public function store(Major $major) {
         $attributes = request()->validate([
-            'first_name' => ['required', 'max:255'],
-            'last_name' => ['required', 'max:255'],
-            'title' => ['required', 'max:255'],
-            'email' => ['required', 'email'],
-            'active' => ['boolean']
+            'name' => ['required', 'max:255'],
+            'abbr' => ['required', 'max:4'],
         ]);
 
         Major::create($attributes);
@@ -32,16 +29,13 @@ class MajorsController extends Controller {
     }
 
     public function edit(Major $major) {
-        return view('majors.edit', compact('user'));
+        return view('majors.edit', compact('major'));
     }
 
     public function update(Major $major) {
         $attributes = request()->validate([
-            'first_name' => ['required', 'max:255'],
-            'last_name' => ['required', 'max:255'],
-            'title' => ['required', 'max:255'],
-            'email' => ['required', 'email'],
-            'active' => ['boolean']
+            'name' => ['required', 'max:255'],
+            'abbr' => ['required', 'max:4'],
         ]);
 
         $major->update($attributes);

@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <form action="/majors/{{ $major->id  }}" method="POST" class="form-group">
+    <form action="/majors/{{ $major->id  }}" method="POST" class="form-group mt-3">
         @method('PATCH')
         @csrf
 
