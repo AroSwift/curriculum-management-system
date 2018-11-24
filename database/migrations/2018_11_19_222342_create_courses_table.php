@@ -20,8 +20,8 @@ class CreateCoursesTable extends Migration
             $table->string('credit_hour');
             $table->integer('major_id');
             $table->boolean('active');
-            $table->string('description');
-            $table->integer('course_coordinator_id');
+            $table->string('description')->nullable();
+            $table->integer('course_coordinator_id')->nullable();
             $table->timestamps();
         });
     }

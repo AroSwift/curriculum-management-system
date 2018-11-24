@@ -8,8 +8,8 @@ class DatabaseSeeder extends Seeder {
          $this->call([
              UsersTableSeeder::class,
              RolesTableSeeder::class,
-             MajorsTableSeeder::class //,
-//             CoursesTableSeeder::class
+             MajorsTableSeeder::class,
+             CoursesTableSeeder::class
          ]);
     }
 
