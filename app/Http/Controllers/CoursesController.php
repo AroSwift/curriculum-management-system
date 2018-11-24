@@ -20,12 +20,16 @@ class CoursesController extends Controller {
 
     public function store(Course $course) {
         $attributes = request()->validate([
-            'first_name' => ['required', 'max:255'],
-            'last_name' => ['required', 'max:255'],
-            'title' => ['required', 'max:255'],
-            'email' => ['required', 'email'],
-            'active' => ['boolean']
+            'course_name' => ['required', 'max:255'],
+            'course_number' => ['required', 'max:255'],
+            'credit_hour' => ['required', 'integer'],
+            'major_id' => ['integer'],
+            'active' => ['boolean'],
+            'description' => ['required', 'max:255'],
+            'course_coordinator_id' => ['integer']
         ]);
+
+        $attributes['active'] = empty($attributes['active']) ? false : true;
 
         Course::create($attributes);
         return redirect('/courses');
@@ -37,12 +41,16 @@ class CoursesController extends Controller {
 
     public function update(Course $course) {
         $attributes = request()->validate([
-            'first_name' => ['required', 'max:255'],
-            'last_name' => ['required', 'max:255'],
-            'title' => ['required', 'max:255'],
-            'email' => ['required', 'email'],
-            'active' => ['boolean']
+            'course_name' => ['required', 'max:255'],
+            'course_number' => ['required', 'max:255'],
+            'credit_hour' => ['required', 'integer'],
+            'major_id' => ['integer'],
+            'active' => ['boolean'],
+            'description' => ['required', 'max:255'],
+            'course_coordinator_id' => ['integer']
         ]);
+
+        $attributes['active'] = empty($attributes['active']) ? false : true;
 
         $course->update($attributes);
         return redirect('/courses');

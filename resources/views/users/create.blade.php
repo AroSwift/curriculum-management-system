@@ -4,14 +4,6 @@
 
 @section('content')
 
-    @if(count($errors) > 0)
-        <div class="alert alert-danger mt-4" role="alert">
-            @foreach($errors->all() as $error)
-                <strong>{{ $error }}</strong>
-            @endforeach
-        </div>
-    @endif
-
     <form action="/users" method="POST" class="form-group mt-4">
         @method('POST')
         @csrf
@@ -38,8 +30,7 @@
 
         <div class="form-group">
             <label>Active</label>
-            <input type="checkbox" class="form-control" name="active"
-                   value="{{ empty(old('active')) ? '1' : old('active')  }}" checked>
+            <input type="checkbox" class="form-control" value="1" name="active" {{ old('active') ? 'checked' : '' }}>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>

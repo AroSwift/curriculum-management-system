@@ -34,6 +34,15 @@
     </nav>
 
     <div class="container-fluid">
+
+        @if(count($errors) > 0)
+            <div class="alert alert-danger mt-4" role="alert">
+                @foreach($errors->all() as $error)
+                    <strong>{{ $error }}</strong>
+                @endforeach
+            </div>
+        @endif
+
         @yield('content')
     </div>
 

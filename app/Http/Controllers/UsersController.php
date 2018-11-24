@@ -24,8 +24,10 @@ class UsersController extends Controller {
             'last_name' => ['required', 'max:255'],
             'title' => ['required', 'max:255'],
             'email' => ['required', 'email'],
-            'active' => ['required']
+            'active' => ['boolean']
         ]);
+
+        $attributes['active'] = empty($attributes['active']) ? false : true;
 
         User::create($attributes);
         return redirect('/users');
@@ -36,6 +38,7 @@ class UsersController extends Controller {
     }
 
     public function update(User $user) {
+
         $attributes = request()->validate([
             'first_name' => ['required', 'max:255'],
             'last_name' => ['required', 'max:255'],
@@ -43,6 +46,8 @@ class UsersController extends Controller {
             'email' => ['required', 'email'],
             'active' => ['boolean']
         ]);
+
+        $attributes['active'] = empty($attributes['active']) ? false : true;
 
         $user->update($attributes);
         return redirect('/users');

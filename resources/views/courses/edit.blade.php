@@ -29,11 +29,6 @@
         </div>
 
         <div class="form-group">
-            <label>Active</label>
-            <input type="text" class="form-control" name="name" value="{{ $course->active }}">
-        </div>
-
-        <div class="form-group">
             <label>Description</label>
             <input type="text" class="form-control" name="abbr" value="{{ $course->description }}">
         </div>
@@ -42,6 +37,12 @@
             <label>Course Coordinator</label>
             <input type="text" class="form-control" name="abbr" value="{{ $course->course_coordinator }}">
         </div>
+
+        <div class="form-group">
+            <label>Active?</label>
+            <input type="checkbox" class="form-control" value="1" name="active" {{ $course->active ? 'checked' : '' }}>
+        </div>
+
 
         <button type="submit" class="btn btn-primary">Submit</button>
 

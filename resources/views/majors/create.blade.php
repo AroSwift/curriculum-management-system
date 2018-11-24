@@ -4,14 +4,6 @@
 
 @section('content')
 
-    @if(count($errors) > 0)
-        <div class="alert alert-danger mt-4" role="alert">
-            @foreach($errors->all() as $error)
-                <strong>{{ $error }}</strong>
-            @endforeach
-        </div>
-    @endif
-
     <form action="/majors" method="POST" class="form-group mt-4">
         @method('POST')
         @csrf
