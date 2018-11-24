@@ -11,10 +11,9 @@
 |
 */
 
-Route::resource('usersTableSeeder','UsersController');
-Route::resource('majorsTableSeeder','MajorsController');
-Route::resource('rolesTableSeeder','RolesController');
-Route::resource('coursesTableSeeder','CoursesController');
-
+Route::resource('users','UsersController');
+Route::resource('majors','MajorsController');
+Route::resource('roles','RolesController');
+Route::resource('courses','CoursesController');
 
 Route::get('/', 'UsersController@index');

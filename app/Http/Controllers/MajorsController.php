@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 use App\Major;
 
-class MajorsController extends Controller
-{
+class MajorsController extends Controller {
 
     public function index() {
         $majors = Major::all();
