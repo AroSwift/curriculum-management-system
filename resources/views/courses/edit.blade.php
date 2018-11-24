@@ -14,32 +14,32 @@
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Number</label>
             <input type="text" class="form-control" name="name" value="{{ $course->course_number }}">
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Credit Hour</label>
             <input type="text" class="form-control" name="name" value="{{ $course->credit_hour }}">
         </div>
 
         <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" name="name" value="{{ $course->course_id }}">
+            <label>Major</label>
+            <input type="text" class="form-control" name="name" value="{{ $course->major_id }}">
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Active</label>
             <input type="text" class="form-control" name="name" value="{{ $course->active }}">
         </div>
 
         <div class="form-group">
-            <label>Abbr</label>
+            <label>Description</label>
             <input type="text" class="form-control" name="abbr" value="{{ $course->description }}">
         </div>
 
         <div class="form-group">
-            <label>Abbr</label>
+            <label>Course Coordinator</label>
             <input type="text" class="form-control" name="abbr" value="{{ $course->course_coordinator }}">
         </div>
 

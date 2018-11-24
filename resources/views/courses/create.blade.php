@@ -22,32 +22,32 @@
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Number</label>
             <input type="text" class="form-control" name="name" value="{{ old('course_number')  }}">
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Credit Hour</label>
             <input type="text" class="form-control" name="name" value="{{ old('credit_hour')  }}">
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Major</label>
             <input type="text" class="form-control" name="name" value="{{ old('major_id')  }}">
         </div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Active</label>
             <input type="text" class="form-control" name="name" value="{{ old('active')  }}">
         </div>
 
         <div class="form-group">
-            <label>Abbr</label>
+            <label>Description</label>
             <input type="text" class="form-control" name="abbr" value="{{ old('description')  }}">
         </div>
 
         <div class="form-group">
-            <label>Abbr</label>
+            <label>Course Coordinator</label>
             <input type="text" class="form-control" name="abbr" value="{{ old('course_coordinator')  }}">
         </div>
 
