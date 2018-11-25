@@ -30,7 +30,7 @@
                 </td>
                 <td>{{ $course->course_number }}</td>
                 <td>{{ $course->credit_hour }}</td>
-                <td>{{ $course->major }}</td>
+                <td>{{ $course->major_id }}</td>
                 <td>
                     @if($course->active)
                         <i class="fa fa-check" aria-hidden="true"></i>
@@ -39,7 +39,7 @@
                     @endif
                 </td>
                 <td>{{ $course->description }}</td>
-                <td>{{ $course->course_coordinator }}</td>
+                <td>{{ $course->course_coordinator_id }}</td>
             </tr>
         @endforeach
         </tbody>
