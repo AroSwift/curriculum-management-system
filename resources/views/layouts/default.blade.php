@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item {{ Request::is('courses') || Request::is('courses/*') ? 'active' : '' }}">
+                <li class="nav-item {{ Request::is('/') || Request::is('courses') || Request::is('courses/*') ? 'active' : '' }}">
                     <a class="nav-link" href="/courses">Courses</a>
                 </li>
                 <li class="nav-item {{ Request::is('majors') || Request::is('majors/*') ? 'active' : '' }}">

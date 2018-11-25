@@ -15,7 +15,7 @@
 
         <div class="form-group">
             <label>Description</label>
-            <input type="text" class="form-control" name="name" value="{{ old('description')  }}">
+            <input type="text" class="form-control" name="description" value="{{ old('description')  }}">
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
